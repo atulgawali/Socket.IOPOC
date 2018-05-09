@@ -1,0 +1,508 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		74CAB12B20A2F38400133D17 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 74CAB12A20A2F38400133D17 /* AppDelegate.m */; };
+		74CAB12E20A2F38400133D17 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74CAB12D20A2F38400133D17 /* ViewController.m */; };
+		74CAB13120A2F38400133D17 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74CAB12F20A2F38400133D17 /* Main.storyboard */; };
+		74CAB13320A2F38600133D17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74CAB13220A2F38600133D17 /* Assets.xcassets */; };
+		74CAB13620A2F38600133D17 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74CAB13420A2F38600133D17 /* LaunchScreen.storyboard */; };
+		74CAB13920A2F38600133D17 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 74CAB13820A2F38600133D17 /* main.m */; };
+		74CAB16520A2FF6900133D17 /* VPSocketEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 74CAB14120A2FF6900133D17 /* VPSocketEngine.m */; };
+		74CAB16620A2FF6900133D17 /* VPSocketAckManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 74CAB14720A2FF6900133D17 /* VPSocketAckManager.m */; };
+		74CAB16720A2FF6900133D17 /* VPSocketAckEmitter.m in Sources */ = {isa = PBXBuildFile; fileRef = 74CAB14C20A2FF6900133D17 /* VPSocketAckEmitter.m */; };
+		74CAB16820A2FF6900133D17 /* DefaultSocketLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 74CAB14D20A2FF6900133D17 /* DefaultSocketLogger.m */; };
+		74CAB16920A2FF6900133D17 /* VPSocketEngine+EngineWebsocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 74CAB14F20A2FF6900133D17 /* VPSocketEngine+EngineWebsocket.m */; };
+		74CAB16A20A2FF6900133D17 /* VPSocketAck.m in Sources */ = {isa = PBXBuildFile; fileRef = 74CAB15020A2FF6900133D17 /* VPSocketAck.m */; };
+		74CAB16B20A2FF6900133D17 /* VPSocketOnAckCallback.m in Sources */ = {isa = PBXBuildFile; fileRef = 74CAB15220A2FF6900133D17 /* VPSocketOnAckCallback.m */; };
+		74CAB16C20A2FF6900133D17 /* VPSocketIOClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 74CAB15420A2FF6900133D17 /* VPSocketIOClient.m */; };
+		74CAB16D20A2FF6900133D17 /* VPSocketPacket.m in Sources */ = {isa = PBXBuildFile; fileRef = 74CAB15520A2FF6900133D17 /* VPSocketPacket.m */; };
+		74CAB16E20A2FF6900133D17 /* VPSocketLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 74CAB15820A2FF6900133D17 /* VPSocketLogger.m */; };
+		74CAB16F20A2FF6900133D17 /* VPSocketEngine+EnginePollable.m in Sources */ = {isa = PBXBuildFile; fileRef = 74CAB15920A2FF6900133D17 /* VPSocketEngine+EnginePollable.m */; };
+		74CAB17020A2FF6900133D17 /* VPSocketAnyEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 74CAB15A20A2FF6900133D17 /* VPSocketAnyEvent.m */; };
+		74CAB17120A2FF6900133D17 /* NSString+VPSocketIO.m in Sources */ = {isa = PBXBuildFile; fileRef = 74CAB15B20A2FF6900133D17 /* NSString+VPSocketIO.m */; };
+		74CAB17220A2FF6900133D17 /* VPStringReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 74CAB15D20A2FF6900133D17 /* VPStringReader.m */; };
+		74CAB17320A2FF6900133D17 /* JFRSecurity.m in Sources */ = {isa = PBXBuildFile; fileRef = 74CAB16320A2FF6900133D17 /* JFRSecurity.m */; };
+		74CAB17420A2FF6900133D17 /* JFRWebSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 74CAB16420A2FF6900133D17 /* JFRWebSocket.m */; };
+		D841EE026A01341D4A7B6E17 /* libPods-Socket.IOPOC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 21B7393F987CA1E8DAE3541E /* libPods-Socket.IOPOC.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		21B7393F987CA1E8DAE3541E /* libPods-Socket.IOPOC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Socket.IOPOC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		74CAB12620A2F38400133D17 /* Socket.IOPOC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Socket.IOPOC.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		74CAB12920A2F38400133D17 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		74CAB12A20A2F38400133D17 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		74CAB12C20A2F38400133D17 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		74CAB12D20A2F38400133D17 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		74CAB13020A2F38400133D17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		74CAB13220A2F38600133D17 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		74CAB13520A2F38600133D17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		74CAB13720A2F38600133D17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		74CAB13820A2F38600133D17 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		74CAB14020A2FF6900133D17 /* VPSocketOnAckCallback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VPSocketOnAckCallback.h; sourceTree = "<group>"; };
+		74CAB14120A2FF6900133D17 /* VPSocketEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VPSocketEngine.m; sourceTree = "<group>"; };
+		74CAB14220A2FF6900133D17 /* VPSocketEngineProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VPSocketEngineProtocol.h; sourceTree = "<group>"; };
+		74CAB14320A2FF6900133D17 /* VPSocketAck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VPSocketAck.h; sourceTree = "<group>"; };
+		74CAB14420A2FF6900133D17 /* VPSocketIOClientProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VPSocketIOClientProtocol.h; sourceTree = "<group>"; };
+		74CAB14520A2FF6900133D17 /* VPSocketPacket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VPSocketPacket.h; sourceTree = "<group>"; };
+		74CAB14620A2FF6900133D17 /* VPSocketIOClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VPSocketIOClient.h; sourceTree = "<group>"; };
+		74CAB14720A2FF6900133D17 /* VPSocketAckManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VPSocketAckManager.m; sourceTree = "<group>"; };
+		74CAB14820A2FF6900133D17 /* NSString+VPSocketIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+VPSocketIO.h"; sourceTree = "<group>"; };
+		74CAB14920A2FF6900133D17 /* VPSocketAnyEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VPSocketAnyEvent.h; sourceTree = "<group>"; };
+		74CAB14A20A2FF6900133D17 /* VPSocketEngine+EnginePollable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "VPSocketEngine+EnginePollable.h"; sourceTree = "<group>"; };
+		74CAB14B20A2FF6900133D17 /* VPSocketLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VPSocketLogger.h; sourceTree = "<group>"; };
+		74CAB14C20A2FF6900133D17 /* VPSocketAckEmitter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VPSocketAckEmitter.m; sourceTree = "<group>"; };
+		74CAB14D20A2FF6900133D17 /* DefaultSocketLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DefaultSocketLogger.m; sourceTree = "<group>"; };
+		74CAB14E20A2FF6900133D17 /* VPStringReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VPStringReader.h; sourceTree = "<group>"; };
+		74CAB14F20A2FF6900133D17 /* VPSocketEngine+EngineWebsocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "VPSocketEngine+EngineWebsocket.m"; sourceTree = "<group>"; };
+		74CAB15020A2FF6900133D17 /* VPSocketAck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VPSocketAck.m; sourceTree = "<group>"; };
+		74CAB15120A2FF6900133D17 /* VPSocketEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VPSocketEngine.h; sourceTree = "<group>"; };
+		74CAB15220A2FF6900133D17 /* VPSocketOnAckCallback.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VPSocketOnAckCallback.m; sourceTree = "<group>"; };
+		74CAB15320A2FF6900133D17 /* VPSocketAckManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VPSocketAckManager.h; sourceTree = "<group>"; };
+		74CAB15420A2FF6900133D17 /* VPSocketIOClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VPSocketIOClient.m; sourceTree = "<group>"; };
+		74CAB15520A2FF6900133D17 /* VPSocketPacket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VPSocketPacket.m; sourceTree = "<group>"; };
+		74CAB15620A2FF6900133D17 /* VPSocketEngine+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "VPSocketEngine+Private.h"; sourceTree = "<group>"; };
+		74CAB15720A2FF6900133D17 /* VPSocketAckEmitter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VPSocketAckEmitter.h; sourceTree = "<group>"; };
+		74CAB15820A2FF6900133D17 /* VPSocketLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VPSocketLogger.m; sourceTree = "<group>"; };
+		74CAB15920A2FF6900133D17 /* VPSocketEngine+EnginePollable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "VPSocketEngine+EnginePollable.m"; sourceTree = "<group>"; };
+		74CAB15A20A2FF6900133D17 /* VPSocketAnyEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VPSocketAnyEvent.m; sourceTree = "<group>"; };
+		74CAB15B20A2FF6900133D17 /* NSString+VPSocketIO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+VPSocketIO.m"; sourceTree = "<group>"; };
+		74CAB15C20A2FF6900133D17 /* VPSocketIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VPSocketIO.h; sourceTree = "<group>"; };
+		74CAB15D20A2FF6900133D17 /* VPStringReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VPStringReader.m; sourceTree = "<group>"; };
+		74CAB15E20A2FF6900133D17 /* VPSocketEngine+EngineWebsocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "VPSocketEngine+EngineWebsocket.h"; sourceTree = "<group>"; };
+		74CAB15F20A2FF6900133D17 /* DefaultSocketLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DefaultSocketLogger.h; sourceTree = "<group>"; };
+		74CAB16120A2FF6900133D17 /* JFRSecurity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFRSecurity.h; sourceTree = "<group>"; };
+		74CAB16220A2FF6900133D17 /* JFRWebSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFRWebSocket.h; sourceTree = "<group>"; };
+		74CAB16320A2FF6900133D17 /* JFRSecurity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFRSecurity.m; sourceTree = "<group>"; };
+		74CAB16420A2FF6900133D17 /* JFRWebSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFRWebSocket.m; sourceTree = "<group>"; };
+		C15F7D91CC9690A6A0E6CA28 /* Pods-Socket.IOPOC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Socket.IOPOC.release.xcconfig"; path = "Pods/Target Support Files/Pods-Socket.IOPOC/Pods-Socket.IOPOC.release.xcconfig"; sourceTree = "<group>"; };
+		EC4BC1E4787ABB830BA03DD0 /* Pods-Socket.IOPOC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Socket.IOPOC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Socket.IOPOC/Pods-Socket.IOPOC.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		74CAB12320A2F38400133D17 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D841EE026A01341D4A7B6E17 /* libPods-Socket.IOPOC.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		42F931700465BF2C5EE9D2BF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				21B7393F987CA1E8DAE3541E /* libPods-Socket.IOPOC.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		74CAB11D20A2F38400133D17 = {
+			isa = PBXGroup;
+			children = (
+				74CAB16020A2FF6900133D17 /* jetfire */,
+				74CAB13F20A2FF6900133D17 /* Source */,
+				74CAB12820A2F38400133D17 /* Socket.IOPOC */,
+				74CAB12720A2F38400133D17 /* Products */,
+				B3957FA22975EFD7828DFF11 /* Pods */,
+				42F931700465BF2C5EE9D2BF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		74CAB12720A2F38400133D17 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				74CAB12620A2F38400133D17 /* Socket.IOPOC.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		74CAB12820A2F38400133D17 /* Socket.IOPOC */ = {
+			isa = PBXGroup;
+			children = (
+				74CAB12920A2F38400133D17 /* AppDelegate.h */,
+				74CAB12A20A2F38400133D17 /* AppDelegate.m */,
+				74CAB12C20A2F38400133D17 /* ViewController.h */,
+				74CAB12D20A2F38400133D17 /* ViewController.m */,
+				74CAB12F20A2F38400133D17 /* Main.storyboard */,
+				74CAB13220A2F38600133D17 /* Assets.xcassets */,
+				74CAB13420A2F38600133D17 /* LaunchScreen.storyboard */,
+				74CAB13720A2F38600133D17 /* Info.plist */,
+				74CAB13820A2F38600133D17 /* main.m */,
+			);
+			path = Socket.IOPOC;
+			sourceTree = "<group>";
+		};
+		74CAB13F20A2FF6900133D17 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				74CAB14020A2FF6900133D17 /* VPSocketOnAckCallback.h */,
+				74CAB14120A2FF6900133D17 /* VPSocketEngine.m */,
+				74CAB14220A2FF6900133D17 /* VPSocketEngineProtocol.h */,
+				74CAB14320A2FF6900133D17 /* VPSocketAck.h */,
+				74CAB14420A2FF6900133D17 /* VPSocketIOClientProtocol.h */,
+				74CAB14520A2FF6900133D17 /* VPSocketPacket.h */,
+				74CAB14620A2FF6900133D17 /* VPSocketIOClient.h */,
+				74CAB14720A2FF6900133D17 /* VPSocketAckManager.m */,
+				74CAB14820A2FF6900133D17 /* NSString+VPSocketIO.h */,
+				74CAB14920A2FF6900133D17 /* VPSocketAnyEvent.h */,
+				74CAB14A20A2FF6900133D17 /* VPSocketEngine+EnginePollable.h */,
+				74CAB14B20A2FF6900133D17 /* VPSocketLogger.h */,
+				74CAB14C20A2FF6900133D17 /* VPSocketAckEmitter.m */,
+				74CAB14D20A2FF6900133D17 /* DefaultSocketLogger.m */,
+				74CAB14E20A2FF6900133D17 /* VPStringReader.h */,
+				74CAB14F20A2FF6900133D17 /* VPSocketEngine+EngineWebsocket.m */,
+				74CAB15020A2FF6900133D17 /* VPSocketAck.m */,
+				74CAB15120A2FF6900133D17 /* VPSocketEngine.h */,
+				74CAB15220A2FF6900133D17 /* VPSocketOnAckCallback.m */,
+				74CAB15320A2FF6900133D17 /* VPSocketAckManager.h */,
+				74CAB15420A2FF6900133D17 /* VPSocketIOClient.m */,
+				74CAB15520A2FF6900133D17 /* VPSocketPacket.m */,
+				74CAB15620A2FF6900133D17 /* VPSocketEngine+Private.h */,
+				74CAB15720A2FF6900133D17 /* VPSocketAckEmitter.h */,
+				74CAB15820A2FF6900133D17 /* VPSocketLogger.m */,
+				74CAB15920A2FF6900133D17 /* VPSocketEngine+EnginePollable.m */,
+				74CAB15A20A2FF6900133D17 /* VPSocketAnyEvent.m */,
+				74CAB15B20A2FF6900133D17 /* NSString+VPSocketIO.m */,
+				74CAB15C20A2FF6900133D17 /* VPSocketIO.h */,
+				74CAB15D20A2FF6900133D17 /* VPStringReader.m */,
+				74CAB15E20A2FF6900133D17 /* VPSocketEngine+EngineWebsocket.h */,
+				74CAB15F20A2FF6900133D17 /* DefaultSocketLogger.h */,
+			);
+			name = Source;
+			path = Socket.IOPOC/Source;
+			sourceTree = "<group>";
+		};
+		74CAB16020A2FF6900133D17 /* jetfire */ = {
+			isa = PBXGroup;
+			children = (
+				74CAB16120A2FF6900133D17 /* JFRSecurity.h */,
+				74CAB16220A2FF6900133D17 /* JFRWebSocket.h */,
+				74CAB16320A2FF6900133D17 /* JFRSecurity.m */,
+				74CAB16420A2FF6900133D17 /* JFRWebSocket.m */,
+			);
+			name = jetfire;
+			path = Socket.IOPOC/jetfire;
+			sourceTree = "<group>";
+		};
+		B3957FA22975EFD7828DFF11 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EC4BC1E4787ABB830BA03DD0 /* Pods-Socket.IOPOC.debug.xcconfig */,
+				C15F7D91CC9690A6A0E6CA28 /* Pods-Socket.IOPOC.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		74CAB12520A2F38400133D17 /* Socket.IOPOC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 74CAB13C20A2F38600133D17 /* Build configuration list for PBXNativeTarget "Socket.IOPOC" */;
+			buildPhases = (
+				EC86E3B9062F269115355960 /* [CP] Check Pods Manifest.lock */,
+				74CAB12220A2F38400133D17 /* Sources */,
+				74CAB12320A2F38400133D17 /* Frameworks */,
+				74CAB12420A2F38400133D17 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Socket.IOPOC;
+			productName = Socket.IOPOC;
+			productReference = 74CAB12620A2F38400133D17 /* Socket.IOPOC.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		74CAB11E20A2F38400133D17 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = GlobalLogic;
+				TargetAttributes = {
+					74CAB12520A2F38400133D17 = {
+						CreatedOnToolsVersion = 9.4;
+					};
+				};
+			};
+			buildConfigurationList = 74CAB12120A2F38400133D17 /* Build configuration list for PBXProject "Socket.IOPOC" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 74CAB11D20A2F38400133D17;
+			productRefGroup = 74CAB12720A2F38400133D17 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				74CAB12520A2F38400133D17 /* Socket.IOPOC */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		74CAB12420A2F38400133D17 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74CAB13620A2F38600133D17 /* LaunchScreen.storyboard in Resources */,
+				74CAB13320A2F38600133D17 /* Assets.xcassets in Resources */,
+				74CAB13120A2F38400133D17 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		EC86E3B9062F269115355960 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Socket.IOPOC-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		74CAB12220A2F38400133D17 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74CAB16920A2FF6900133D17 /* VPSocketEngine+EngineWebsocket.m in Sources */,
+				74CAB16520A2FF6900133D17 /* VPSocketEngine.m in Sources */,
+				74CAB17020A2FF6900133D17 /* VPSocketAnyEvent.m in Sources */,
+				74CAB12E20A2F38400133D17 /* ViewController.m in Sources */,
+				74CAB16E20A2FF6900133D17 /* VPSocketLogger.m in Sources */,
+				74CAB16620A2FF6900133D17 /* VPSocketAckManager.m in Sources */,
+				74CAB16F20A2FF6900133D17 /* VPSocketEngine+EnginePollable.m in Sources */,
+				74CAB17220A2FF6900133D17 /* VPStringReader.m in Sources */,
+				74CAB17320A2FF6900133D17 /* JFRSecurity.m in Sources */,
+				74CAB16B20A2FF6900133D17 /* VPSocketOnAckCallback.m in Sources */,
+				74CAB16C20A2FF6900133D17 /* VPSocketIOClient.m in Sources */,
+				74CAB16D20A2FF6900133D17 /* VPSocketPacket.m in Sources */,
+				74CAB17120A2FF6900133D17 /* NSString+VPSocketIO.m in Sources */,
+				74CAB16A20A2FF6900133D17 /* VPSocketAck.m in Sources */,
+				74CAB17420A2FF6900133D17 /* JFRWebSocket.m in Sources */,
+				74CAB13920A2F38600133D17 /* main.m in Sources */,
+				74CAB16820A2FF6900133D17 /* DefaultSocketLogger.m in Sources */,
+				74CAB12B20A2F38400133D17 /* AppDelegate.m in Sources */,
+				74CAB16720A2FF6900133D17 /* VPSocketAckEmitter.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		74CAB12F20A2F38400133D17 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				74CAB13020A2F38400133D17 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		74CAB13420A2F38600133D17 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				74CAB13520A2F38600133D17 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		74CAB13A20A2F38600133D17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		74CAB13B20A2F38600133D17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		74CAB13D20A2F38600133D17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC4BC1E4787ABB830BA03DD0 /* Pods-Socket.IOPOC.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Socket.IOPOC/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "GlobalLogic.Socket-IOPOC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		74CAB13E20A2F38600133D17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C15F7D91CC9690A6A0E6CA28 /* Pods-Socket.IOPOC.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Socket.IOPOC/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "GlobalLogic.Socket-IOPOC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		74CAB12120A2F38400133D17 /* Build configuration list for PBXProject "Socket.IOPOC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				74CAB13A20A2F38600133D17 /* Debug */,
+				74CAB13B20A2F38600133D17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		74CAB13C20A2F38600133D17 /* Build configuration list for PBXNativeTarget "Socket.IOPOC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				74CAB13D20A2F38600133D17 /* Debug */,
+				74CAB13E20A2F38600133D17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 74CAB11E20A2F38400133D17 /* Project object */;
+}
